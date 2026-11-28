@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <radialGradient id="g1" cx="72%" cy="18%" r="85%">
+      <stop offset="0" stop-color="#24406a"/><stop offset="55%" stop-color="#16294a"/><stop offset="100%" stop-color="#0b1626"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c2a55b" stop-opacity="0"/><stop offset="0.5" stop-color="#c2a55b" stop-opacity=".7"/><stop offset="1" stop-color="#c2a55b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <g fill="none" stroke="#c2a55b" stroke-width="1" opacity="0.20">
+    <path d="M-140 640 C 300 560 520 640 820 560 C 1120 480 1360 580 1780 500">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 46 -8; 0 0" dur="19s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </path>
+    <path d="M-140 720 C 320 660 560 720 880 650 C 1180 585 1400 660 1780 600">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -40 6; 0 0" dur="25s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </path>
+    <path d="M-140 560 C 280 500 500 560 800 470 C 1120 375 1360 470 1780 400">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 30 -12; 0 0" dur="31s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </path>
+  </g>
+  <path d="M-140 700 C 320 650 560 705 900 635 C 1220 570 1420 645 1780 590 L1780 900 L-140 900Z" fill="#0c1a2e" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -26 0; 0 0" dur="27s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+  </path>
+  <rect x="0" y="705" width="1600" height="2" fill="url(#gold)">
+    <animate attributeName="opacity" values="0.5;0.95;0.5" dur="6s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Refer someone | Quantock Financial</title>
+<meta name="description" content="Refer a friend, family member or colleague to Quantock Financial in Taunton.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://quantockfinancial.co.uk/refer">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="refer.webmanifest">
+<meta name="theme-color" content="#1c4f60">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="QF Referrals">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="assets/css/styles.min.css?v=b0eb9c51">
+<style>
+body.refer{background:var(--blue-50);min-height:100vh;min-height:100dvh}
+.r-top{background:var(--blue-700);color:#fff;padding:calc(env(safe-area-inset-top) + .8rem) 1rem .8rem}
+.r-top .in{max-width:560px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.r-top img{height:38px;width:auto;display:block}
+.r-top a.call{color:#fff;text-decoration:none;font-size:.9rem;font-weight:600;opacity:.92;white-space:nowrap}
+.r-wrap{max-width:560px;margin:0 auto;padding:1.2rem 1rem calc(env(safe-area-inset-bottom) + 2rem)}
+.r-card{background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:1.4rem 1.2rem;margin-bottom:1rem}
+.r-card h1{font-family:var(--head);font-size:1.6rem;line-height:1.2;margin:0 0 .5rem;color:var(--blue-900)}
+.r-card h2{font-family:var(--head);font-size:1.15rem;margin:0 0 .8rem;color:var(--blue-900)}
+.r-card p{margin:0 0 .6rem;color:var(--ink-soft)}
+.r-by{display:flex;align-items:center;justify-content:space-between;gap:.8rem;background:var(--blue-100);border-radius:var(--radius);padding:.7rem .9rem;margin:0 0 1rem;color:var(--blue-900)}
+.r-by b{font-weight:700}
+.r-by button,.linkish{background:none;border:0;color:var(--teal-ink);font:inherit;font-weight:600;text-decoration:underline;cursor:pointer;padding:0}
+.r-form .field{margin-bottom:.9rem}
+.r-form label,.r-form legend{display:block;font-weight:600;font-size:.92rem;color:var(--ink);margin-bottom:.3rem}
+.r-form legend{margin-bottom:.5rem}
+.r-form fieldset{border:0;padding:0;margin:0 0 .9rem}
+.r-form input[type=text],.r-form input[type=tel],.r-form input[type=email],.r-form select,.r-form textarea{width:100%;font:inherit;font-size:16px;padding:.7rem .8rem;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);box-sizing:border-box}
+.r-form textarea{min-height:5.5rem;resize:vertical}
+.r-form input:focus,.r-form select:focus,.r-form textarea:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:var(--blue-500)}
+.r-form [aria-invalid=true]{border-color:#b3261e!important;background:#fff6f5}
+.r-row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+@media (max-width:380px){.r-row{grid-template-columns:1fr}}
+.r-hint{font-size:.82rem;color:var(--ink-soft);margin:.25rem 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{margin:0;font-weight:500;position:relative}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:.5rem .85rem;border:1px solid var(--blue-200);border-radius:999px;background:#fff;color:var(--blue-800);font-size:.92rem;cursor:pointer}
+.chips input:checked+span{background:var(--blue-700);border-color:var(--blue-700);color:#fff}
+.chips input:focus-visible+span{outline:2px solid var(--teal);outline-offset:2px}
+.r-form .consent{display:flex;gap:.7rem;align-items:flex-start;font-size:.92rem;color:var(--ink);margin:.4rem 0 1rem;font-weight:500}
+.r-form .consent input{margin-top:.15rem;width:20px;height:20px;accent-color:var(--blue-700);flex:none}
+.r-form .consent.bad span{color:#b3261e}
+.r-send{width:100%;justify-content:center;font-size:1.05rem;padding:.95rem 1rem}
+.r-status{margin:.8rem 0 0;font-size:.92rem;color:#b3261e}
+.r-small{font-size:.82rem;color:var(--ink-soft)}
+.r-small a{color:var(--teal-ink)}
+.r-done{text-align:center}
+.r-done .tick{width:64px;height:64px;border-radius:50%;background:var(--blue-100);color:var(--blue-700);display:grid;place-items:center;margin:.4rem auto 1rem;font-size:2rem}
+.r-link{display:flex;gap:.5rem;margin-top:.6rem}
+.r-link input{flex:1;min-width:0}
+.r-out{word-break:break-all;background:var(--blue-50);border-radius:10px;padding:.6rem .8rem;font-size:.9rem;margin:.6rem 0;color:var(--blue-900)}
+.r-btns{display:flex;flex-wrap:wrap;gap:.5rem}
+.r-btns .btn{flex:1;justify-content:center}
+.r-legal{font-size:.74rem;line-height:1.5;color:var(--ink-soft);padding:.4rem .2rem}
+.r-legal p{margin:0 0 .6rem}
+.r-legal a{color:var(--teal-ink)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+[hidden]{display:none!important}
+</style>
+</head>
+<body class="refer">
+<header class="r-top"><div class="in">
+  <a href="/" aria-label="Quantock Financial website"><img src="assets/logo-white.svg" alt="Quantock Financial" width="122" height="38"></a>
+  <a class="call" href="tel:01823426046">01823 426046</a>
+</div></header>
+<main class="r-wrap" id="main">
+  <!-- NEW-COPY: all wording on this page needs approval by The Openwork Partnership before launch -->
+  <section class="r-card">
+    <h1>Refer someone to us</h1>
+    <p>Know someone who could use help with a mortgage, protection or insurance? Add their details below and one of our team will get in touch with them.</p>
+    <p class="r-small" style="margin:0">Please only refer someone who has said they are happy to hear from us.</p>
+  </section>
+
+  <form class="r-card r-form" id="refer" novalidate>
+    <div class="r-by" id="by-box" hidden><span>Referred by <b id="by-name"></b></span><button type="button" id="by-change">Change</button></div>
+    <div id="me-box">
+      <h2>Your details</h2>
+      <div class="field"><label for="ref_name">Your name</label><input type="text" id="ref_name" name="ref_name" autocomplete="name" required></div>
+    </div>
+    <div class="field"><label for="ref_contact">Your phone or email <span class="r-hint" style="display:inline;font-weight:400">(optional)</span></label><input type="text" id="ref_contact" name="ref_contact" autocomplete="email"><p class="r-hint">So we can let you know we've been in touch.</p></div>
+
+    <h2 style="margin-top:1.4rem">Who are you referring?</h2>
+    <div class="r-row">
+      <div class="field"><label for="c_first">First name</label><input type="text" id="c_first" name="c_first" autocomplete="off" required></div>
+      <div class="field"><label for="c_last">Last name</label><input type="text" id="c_last" name="c_last" autocomplete="off" required></div>
+    </div>
+    <div class="field"><label for="c_mobile">Their mobile</label><input type="tel" id="c_mobile" name="c_mobile" autocomplete="off" inputmode="tel"></div>
+    <div class="field"><label for="c_email">Their email</label><input type="email" id="c_email" name="c_email" autocomplete="off" inputmode="email"><p class="r-hint">A mobile number or an email is fine. Both is even better.</p></div>
+    <fieldset><legend>What might they need help with?</legend><div class="chips"><label><input type="checkbox" name="help" value="Buying a home"><span>Buying a home</span></label><label><input type="checkbox" name="help" value="Remortgage"><span>Remortgage</span></label><label><input type="checkbox" name="help" value="Buy to let"><span>Buy to let</span></label><label><input type="checkbox" name="help" value="Life or protection cover"><span>Life or protection cover</span></label><label><input type="checkbox" name="help" value="Insurance"><span>Insurance</span></label><label><input type="checkbox" name="help" value="Not sure"><span>Not sure</span></label></div></fieldset>
+    <div class="field"><label for="c_time">Best time to contact them</label><select id="c_time" name="c_time"><option>Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+    <div class="field"><label for="c_notes">Anything else we should know? <span style="font-weight:400">(optional)</span></label><textarea id="c_notes" name="c_notes" placeholder="For example, they're looking to buy their first home next year"></textarea></div>
+    <label class="consent"><input type="checkbox" id="consent" name="consent" value="yes" required><span>I have told this person I'm passing on their details, and they are happy for Quantock Financial to contact them.</span></label>
+    <div class="hp" aria-hidden="true"><input name="qf_trap" tabindex="-1" autocomplete="off" aria-label="Leave blank"></div>
+    <button class="btn btn-navy r-send" type="submit">Send referral</button>
+    <p class="r-status" id="status" role="status"></p>
+    <p class="r-small" style="margin-top:.8rem">We will only use these details to contact them about how we might help. Read our <a href="https://www.theopenworkpartnership.com/privacy-notice/" target="_blank" rel="noopener">privacy statement</a>.</p>
+  </form>
+
+  <section class="r-card r-done" id="done" hidden aria-live="polite">
+    <div class="tick" aria-hidden="true">&#10003;</div>
+    <h2>Thank you, <span id="done-who"></span></h2>
+    <p>We've received your referral and one of our team will be in touch with <span id="done-client"></span> soon.</p>
+    <button class="btn btn-navy r-send" type="button" id="again" style="margin-top:.6rem">Refer someone else</button>
+  </section>
+
+  <section class="r-card" id="install" hidden>
+    <h2>Keep this handy</h2>
+    <p id="install-ios" hidden>Save this page to your home screen: tap the Share button <span aria-hidden="true">&#x2191;</span> in Safari, then <b>Add to Home Screen</b>.</p>
+    <p id="install-other" hidden>Save this page to your home screen: open your browser's menu, then choose <b>Add to Home screen</b> or <b>Install</b>.</p>
+    <button class="btn btn-navy" type="button" id="install-btn" hidden>Add to home screen</button>
+  </section>
+
+  <details class="r-card">
+    <summary style="cursor:pointer;font-weight:600;color:var(--blue-900)">Make a personal referral link</summary>
+    <p style="margin-top:.8rem">Type the name of the person who will be making referrals. Their link fills in their name for them, so every referral shows who it came from.</p>
+    <div class="r-form"><div class="field"><label for="link-name">Their name</label><input type="text" id="link-name" autocomplete="off"></div></div>
+    <div id="link-box" hidden>
+      <p class="r-out" id="link-out"></p>
+      <div class="r-btns"><button class="btn btn-navy" type="button" id="link-copy">Copy link</button><button class="btn btn-navy" type="button" id="link-share" hidden>Share</button></div>
+    </div>
+  </details>
+
+  <footer class="r-legal"><p>Quantock Financial is a trading name of Quantock Financial Services Ltd which is an appointed representative of The Openwork Partnership, a trading style of Openwork Limited which is authorised and regulated by the Financial Conduct Authority.</p><p>Quantock Financial Services Ltd Registered Office: Quantock Financial Services Ltd, Quantock Financial<br>1 The Crescent, Taunton, Somerset, TA1 4EA. Registered company number 12383613. Registered in England &amp; Wales.</p><p>The guidance and/or advice contained within the website is subject to the UK regulatory regime and is therefore primarily targeted at customers in the UK.</p><p>Our alternative dispute resolution provider is the Financial Ombudsman Service. Their website is financial-ombudsman.org.uk</p><p>Please read our <a href="https://www.theopenworkpartnership.com/privacy-notice/" target="_blank" rel="noopener">privacy statement</a> before making an enquiry. Our Address: Quantock Financial, 1 The Crescent, Taunton, Somerset, TA1 4EA. Approved by The Openwork Partnership on 15.05.24</p><p>Your home may be repossessed if you do not keep up repayments on your mortgage. You may have to pay an early repayment charge to your existing lender if you remortgage. As with all insurance policies, conditions and exclusions will apply. There may be a fee for arranging a Mortgage and the precise amount will depend on your circumstances. This will typically be £399. Not all Buy To Let Mortgages are regulated by the Financial Conduct Authority.</p><p>Think carefully before securing other debts against your home. Your home may be repossessed if you do not keep up repayments on a mortgage or loan secured against it. The Financial Conduct Authority does not regulate Commercial Lending or some forms of Buy-to-Let.</p><p>&copy; 2026 Quantock Financial. <a href="/">quantockfinancial.co.uk</a></p></footer>
+</main>
+<script>window.QF_REFER={"endpoint": "https://formspree.io/f/mpppwwre", "site": "https://quantockfinancial.co.uk", "phone": "01823 426046", "tel": "01823426046"};</script>
+<script>
+(function () {
+  var CFG = window.QF_REFER, LOADED = Date.now(), KEY = "qf_referrer";
+  function $(s, r) { return (r || document).querySelector(s); }
+  function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function store(v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(KEY) || "{}"); localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) { return {}; } }
+  function clean(s) { return (s || "").replace(/[<>]/g, "").replace(/\s+/g, " ").trim().slice(0, 60); }
+
+  var form = $("#refer"), done = $("#done"), byBox = $("#by-box"), byName = $("#by-name"), meBox = $("#me-box");
+  var q = new URLSearchParams(location.search), urlBy = clean(q.get("by")), saved = store();
+  var me = $("#ref_name"), meContact = $("#ref_contact");
+  me.value = urlBy || saved.name || "";
+  meContact.value = saved.contact || "";
+
+  // Show "Referred by Sarah" as a banner when the name came from a personal link or a previous visit.
+  function showBy() {
+    if (me.value.trim()) { byName.textContent = me.value.trim(); byBox.hidden = false; meBox.hidden = true; }
+    else { byBox.hidden = true; meBox.hidden = false; }
+  }
+  showBy();
+  $("#by-change").addEventListener("click", function () { byBox.hidden = true; meBox.hidden = false; me.focus(); });
+
+  function val(id) { var el = $("#" + id); return el ? el.value.trim() : ""; }
+  function validate() {
+    var first = null;
+    function mark(el, bad) { el.setAttribute("aria-invalid", bad ? "true" : "false"); if (bad && !first) first = el; }
+    var emailOk = function (v) { return /^\S+@\S+\.\S+$/.test(v); };
+    mark(me, !me.value.trim());
+    if (!me.value.trim()) { byBox.hidden = true; meBox.hidden = false; }
+    mark($("#c_first"), !val("c_first"));
+    mark($("#c_last"), !val("c_last"));
+    var mob = val("c_mobile"), em = val("c_email");
+    var noWay = !mob && !em;
+    mark($("#c_mobile"), noWay || (mob && mob.replace(/\D/g, "").length < 10));
+    mark($("#c_email"), noWay || (em && !emailOk(em)));
+    var c = $("#consent"); c.closest(".consent").classList.toggle("bad", !c.checked);
+    if (!c.checked && !first) first = c;
+    if (first) first.focus();
+    return !first;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var st = $("#status"); st.textContent = "";
+    if ($("[name=qf_trap]", form).value && Date.now() - LOADED < 4000) return;
+    if (!validate()) { st.textContent = "Please check the highlighted boxes. We need their name and a mobile number or email."; return; }
+    var helps = $$("input[name=help]:checked", form).map(function (x) { return x.value; });
+    var who = me.value.trim(), contact = meContact.value.trim();
+    var client = val("c_first") + " " + val("c_last");
+    var data = {
+      _subject: "Referral from " + who + ": " + client,
+      "Referred by": who,
+      "Referrer's phone or email": contact || "Not given",
+      "Client name": client,
+      "Client mobile": val("c_mobile") || "Not given",
+      "Client email": val("c_email") || "Not given",
+      "They may need help with": helps.join(", ") || "Not sure",
+      "Best time to contact them": val("c_time") || "Any time",
+      "Anything else": val("c_notes") || "-",
+      "Happy to be contacted": "Yes, the referrer confirmed the client agreed to be contacted",
+      "Sent from": location.origin + location.pathname,
+      "Personal link used": urlBy ? "Yes (" + urlBy + ")" : "No"
+    };
+    // Replies from office@ go to the referrer when they gave an email address.
+    if (/^\S+@\S+\.\S+$/.test(contact)) data.email = contact;
+    var btn = $("button[type=submit]", form); btn.disabled = true; btn.textContent = "Sending...";
+    fetch(CFG.endpoint, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); })
+      .then(function () {
+        store({ name: who, contact: contact });
+        $("#done-who").textContent = who.split(" ")[0];
+        $("#done-client").textContent = val("c_first");
+        form.reset(); me.value = who; meContact.value = contact; showBy();
+        form.hidden = true; done.hidden = false; window.scrollTo(0, 0);
+      })
+      .catch(function () {
+        st.innerHTML = "Sorry, that didn't send. Please try again, or call us on <a href=\"tel:" + CFG.tel + "\">" + CFG.phone + "</a>.";
+      })
+      .then(function () { btn.disabled = false; btn.textContent = "Send referral"; });
+  });
+  $("#again").addEventListener("click", function () { done.hidden = true; form.hidden = false; $("#c_first").focus(); });
+
+  // Personal link maker
+  var linkName = $("#link-name"), out = $("#link-out"), outBox = $("#link-box");
+  function makeLink() {
+    var n = clean(linkName.value);
+    if (!n) { outBox.hidden = true; return ""; }
+    var u = CFG.site + "/refer?by=" + encodeURIComponent(n).replace(/%20/g, "+");
+    out.textContent = u; outBox.hidden = false; return u;
+  }
+  linkName.addEventListener("input", makeLink);
+  $("#link-copy").addEventListener("click", function () {
+    var u = makeLink(); if (!u) return;
+    var b = this;
+    (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy link"; }, 1800); }, function () { prompt("Copy this link:", u); });
+  });
+  var shareBtn = $("#link-share");
+  if (navigator.share) {
+    shareBtn.hidden = false;
+    shareBtn.addEventListener("click", function () {
+      var u = makeLink(); if (!u) return;
+      navigator.share({ title: "Quantock Financial referrals", text: "Know someone who could use some mortgage or protection advice? You can refer them to Quantock Financial here:", url: u }).catch(function () {});
+    });
+  }
+
+  // "Save to your home screen" help
+  var standalone = window.matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var install = $("#install"), deferred = null;
+  if (!standalone) {
+    if (ios) { $("#install-ios").hidden = false; install.hidden = false; }
+    window.addEventListener("beforeinstallprompt", function (e) {
+      e.preventDefault(); deferred = e;
+      $("#install-other").hidden = true; $("#install-btn").hidden = false; install.hidden = false;
+    });
+    if (!ios) { $("#install-other").hidden = false; install.hidden = false; }
+    $("#install-btn").addEventListener("click", function () { if (deferred) { deferred.prompt(); deferred = null; } });
+  }
+})();
+</script>
+</body>
+</html>

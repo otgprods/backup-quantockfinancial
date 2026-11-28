@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs><linearGradient id="b" x1="0" y1="0" x2="0.6" y2="1">
+    <stop offset="0" stop-color="#e9eef4"/><stop offset="1" stop-color="#cdd9e6"/></linearGradient></defs>
+  <rect width="600" height="750" fill="url(#b)"/>
+  <g fill="none" stroke="#1d2f50" stroke-width="1.5" opacity="0.12">
+    <path d="M-40 520 C 160 470 260 520 400 470 C 520 428 580 470 680 448">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 24 -6; 0 0" dur="21s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/></path>
+    <path d="M-40 580 C 140 540 260 585 400 540 C 520 502 590 540 680 522">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -20 5; 0 0" dur="28s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/></path></g>
+  <path d="M-40 560 C 160 510 260 560 420 512 C 540 476 590 512 680 496 L680 750 L-40 750Z" fill="#1d2f50" opacity="0.06"/>
+  <path d="M-40 560 C 160 510 260 560 420 512 C 540 476 590 512 680 496" fill="none" stroke="#c2a55b" stroke-width="2" opacity="0.5">
+    <animate attributeName="opacity" values="0.35;0.65;0.35" dur="8s" repeatCount="indefinite"/></path>
+</svg>
